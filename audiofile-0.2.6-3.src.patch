@@ -1,0 +1,24 @@
+diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x autom4te.cache -x '*compile' -x Makefile.in.in -x 'intltool*.in' -x 'xml-i18n-*.in' -x '*.pyc' -x '*.mo' -x '*.gmo' -x ABOUT-NLS -x Makevars.template -x COPYING -x INSTALL -x mdate-sh -x '*.orig' -x '*.rej' -x '*~' -x '*.temp' -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x omf.make -x xmldocs.make origsrc/audiofile-0.2.6/audiofile.m4 src/audiofile-0.2.6/audiofile.m4
+--- origsrc/audiofile-0.2.6/audiofile.m4	2004-03-06 00:39:23.000000000 -0600
++++ src/audiofile-0.2.6/audiofile.m4	2007-02-11 12:57:05.718750000 -0600
+@@ -9,7 +9,7 @@
+ dnl AM_PATH_AUDIOFILE([MINIMUM-VERSION, [ACTION-IF-FOUND [, ACTION-IF-NOT-FOUND]]])
+ dnl Test for Audio File Library, and define AUDIOFILE_CFLAGS and AUDIOFILE_LIBS.
+ dnl
+-AC_DEFUN(AM_PATH_AUDIOFILE,
++AC_DEFUN([AM_PATH_AUDIOFILE],
+ [dnl 
+ dnl Get compiler flags and libraries from the audiofile-config script.
+ dnl
+diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x autom4te.cache -x '*compile' -x Makefile.in.in -x 'intltool*.in' -x 'xml-i18n-*.in' -x '*.pyc' -x '*.mo' -x '*.gmo' -x ABOUT-NLS -x Makevars.template -x COPYING -x INSTALL -x mdate-sh -x '*.orig' -x '*.rej' -x '*~' -x '*.temp' -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x gnome-doc-utils.make -x gnome-doc-utils.m4 -x intltool.m4 -x omf.make -x xmldocs.make origsrc/audiofile-0.2.6/libaudiofile/Makefile.am src/audiofile-0.2.6/libaudiofile/Makefile.am
+--- origsrc/audiofile-0.2.6/libaudiofile/Makefile.am	2004-03-06 00:39:23.000000000 -0600
++++ src/audiofile-0.2.6/libaudiofile/Makefile.am	2007-02-11 12:54:05.921875000 -0600
+@@ -29,7 +29,7 @@
+ libaudiofile_la_LIBADD = modules/libmodules.la
+ 
+ libaudiofile_la_LDFLAGS = -version-info 0:2:0 -no-undefined \
+-	-export-symbols audiofile.exports
++	-export-symbols $(srcdir)/audiofile.exports
+ 
+ include_HEADERS = audiofile.h aupvlist.h af_vfs.h
+ 

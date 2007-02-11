@@ -1,0 +1,113 @@
+audiofile
+-------------------------------------------
+The Audio File Library provides a uniform programming interface to
+standard digital audio file formats.
+
+This library allows the processing of audio data to and from audio
+files of many common formats (currently AIFF, AIFF-C, WAVE, NeXT/Sun
+.snd/.au, IRCAM, AVR, Amiga IFF/8SVX, and NIST SPHERE).  The library
+also supports compression (currently G.711 mu-law and A-law and IMA and
+MS ADPCM) as well as PCM formats of all flavors (signed and unsigned
+integer, single- and double-precision floating point).
+
+Runtime requirements:
+  cygwin-1.5.24-2
+
+Build requirements:
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.5-1.5-2
+  binutils-20060817-1
+  cygport-0.2.9-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical homepage:
+  http://www.68k.org/~michael/audiofile/
+
+Canonical download:
+  http://ftp.gnome.org/pub/GNOME/sources/audiofile/
+
+-------------------------------------------
+
+Build instructions:
+  unpack audiofile-0.2.6-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./audiofile-0.2.6-X.cygport all
+
+This will create:
+  /usr/src/audiofile-0.2.6-X.tar.bz2
+  /usr/src/audiofile-0.2.6-X-src.tar.bz2
+  /usr/src/libaudiofile-devel-0.2.6-X.tar.bz2
+  /usr/src/libaudiofile0-0.2.6-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/sfconvert.exe
+  /usr/bin/sfinfo.exe
+  /usr/share/doc/Cygwin/audiofile-0.2.6.README
+  /usr/share/doc/audiofile-0.2.6/ACKNOWLEDGEMENTS
+  /usr/share/doc/audiofile-0.2.6/AUTHORS
+  /usr/share/doc/audiofile-0.2.6/ChangeLog
+  /usr/share/doc/audiofile-0.2.6/COPYING
+  /usr/share/doc/audiofile-0.2.6/COPYING.GPL
+  /usr/share/doc/audiofile-0.2.6/INSTALL
+  /usr/share/doc/audiofile-0.2.6/NEWS
+  /usr/share/doc/audiofile-0.2.6/NOTES
+  /usr/share/doc/audiofile-0.2.6/README
+  /usr/share/doc/audiofile-0.2.6/TODO
+  /usr/share/doc/audiofile-0.2.5/api/afCloseFile
+  /usr/share/doc/audiofile-0.2.5/api/afGetFrameSize
+  /usr/share/doc/audiofile-0.2.5/api/afGetTrackBytes
+  /usr/share/doc/audiofile-0.2.5/api/afIntro
+  /usr/share/doc/audiofile-0.2.5/api/afNewFileSetup
+  /usr/share/doc/audiofile-0.2.5/api/afOpenFile
+  /usr/share/doc/audiofile-0.2.5/api/afQuery
+  /usr/share/doc/audiofile-0.2.5/api/afReadFrames
+  /usr/share/doc/audiofile-0.2.5/api/afReadMisc
+  /usr/share/doc/audiofile-0.2.5/api/afSeekFrame
+  /usr/share/doc/audiofile-0.2.5/api/afSetErrorHandler
+  /usr/share/doc/audiofile-0.2.5/api/afSetVirtualByteOrder
+  /usr/share/doc/audiofile-0.2.5/api/afWriteFrames
+  /usr/share/doc/audiofile-0.2.5/api/sfconvert
+  /usr/share/doc/audiofile-0.2.5/api/sfinfo
+
+File included in the libaudiofile0 package:
+
+  /usr/bin/cygaudiofile-0.dll
+
+Files included in the devel package:
+
+  /usr/bin/audiofile-config
+  /usr/include/af_vfs.h
+  /usr/include/audiofile.h
+  /usr/include/aupvlist.h
+  /usr/lib/libaudiofile.dll.a
+  /usr/lib/libaudiofile.la
+  /usr/lib/pkgconfig/audiofile.pc
+  /usr/share/aclocal/audiofile.m4
+
+------------------
+
+Port Notes:
+
+----- version 0.2.6-3 -----
+Rebuilt with cygport.
+
+----- version 0.2.6-2 -----
+Rebuilt with static libs disabled.  audiofile.m4 is updated for 
+automake-1.8.
+
+----- version 0.2.6-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by: Yaakov Selkowitz 
+http://sourceforge.net/projects/cygwin-ports/ 

@@ -1,0 +1,12 @@
+category: Audio Gnome
+requires: cygwin libaudiofile0
+sdesc: "Digital audio file library (utilities)"
+ldesc: "The Audio File Library provides a uniform programming interface 
+to standard digital audio file formats.
+
+This library allows the processing of audio data to and from audio
+files of many common formats (currently AIFF, AIFF-C, WAVE, NeXT/Sun
+.snd/.au, IRCAM, AVR, Amiga IFF/8SVX, and NIST SPHERE).  The library
+also supports compression (currently G.711 mu-law and A-law and IMA and
+MS ADPCM) as well as PCM formats of all flavors (signed and unsigned
+integer, single- and double-precision floating point)."
