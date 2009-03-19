@@ -1,7 +1,7 @@
-category: Devel Audio Gnome
-requires: cygwin
+category: Audio Gnome
+requires: cygwin libgcc1
 external-source: audiofile
-sdesc: "Digital audio file library (development)"
+sdesc: "Digital audio file library (runtime)"
 ldesc: "The Audio File Library provides a uniform programming interface 
 to standard digital audio file formats.
 

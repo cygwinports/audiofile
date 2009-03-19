@@ -1,0 +1,28 @@
+inherit gnome.org
+
+DESCRIPTION="AIFF/WAV audio file library"
+HOMEPAGE="http://www.68k.org/~michael/audiofile/"
+
+PATCH_URI="
+	mirror://portage/media-libs/${PN}/files/sfconvert-eradicator.patch
+	mirror://portage/media-libs/${PN}/files/${P}-m4.patch
+	mirror://gentoo/${P}-constantise.patch.bz2
+	mirror://portage/media-libs/${PN}/files/${P}-fmod.patch
+	mirror://portage/media-libs/${PN}/files/${PN}-largefile.patch
+	0.2.6-vpath.patch
+"
+
+PKG_NAMES="${PN} lib${PN}0 lib${PN}-devel"
+audiofile_CONTENTS='--exclude=aclocal --exclude=api usr/bin/*.exe usr/share/'
+libaudiofile0_CONTENTS='usr/bin/*-0.dll'
+libaudiofile_devel_CONTENTS="usr/bin/${PN}-config usr/include/ usr/lib/
+                             usr/share/aclocal/ usr/share/doc/${PN}/api/"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	docinto api
+	dodoc ${S}/docs/[as]f*
+}
+DOCS="ACKNOWLEDGEMENTS COPYING.GPL"

@@ -11,18 +11,18 @@ MS ADPCM) as well as PCM formats of all flavors (signed and unsigned
 integer, single- and double-precision floating point).
 
 Runtime requirements:
-  cygwin-1.5.24-2
+  cygwin-1.7.0-43
+  libgcc1-4.3.2-2
 
 Build requirements:
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.5-1.5-2
-  binutils-20060817-1
-  cygport-0.2.9-1
-  gawk-3.1.5-4
-  gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
-  make-3.81-1
+  autoconf2.5-2.63-10
+  automake1.5-1.5-10
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  libtool-2.2.7a-1
+  make-3.81-2
   sed-4.1.5-2
 
 Canonical homepage:
@@ -48,66 +48,57 @@ This will create:
 
 -------------------------------------------
 
-Files included in the binary package:
+Files included in the binary packages:
 
+(audiofile)
   /usr/bin/sfconvert.exe
   /usr/bin/sfinfo.exe
-  /usr/share/doc/Cygwin/audiofile-0.2.6.README
-  /usr/share/doc/audiofile-0.2.6/ACKNOWLEDGEMENTS
-  /usr/share/doc/audiofile-0.2.6/AUTHORS
-  /usr/share/doc/audiofile-0.2.6/ChangeLog
-  /usr/share/doc/audiofile-0.2.6/COPYING
-  /usr/share/doc/audiofile-0.2.6/COPYING.GPL
-  /usr/share/doc/audiofile-0.2.6/INSTALL
-  /usr/share/doc/audiofile-0.2.6/NEWS
-  /usr/share/doc/audiofile-0.2.6/NOTES
-  /usr/share/doc/audiofile-0.2.6/README
-  /usr/share/doc/audiofile-0.2.6/TODO
-  /usr/share/doc/audiofile-0.2.5/api/afCloseFile
-  /usr/share/doc/audiofile-0.2.5/api/afGetFrameSize
-  /usr/share/doc/audiofile-0.2.5/api/afGetTrackBytes
-  /usr/share/doc/audiofile-0.2.5/api/afIntro
-  /usr/share/doc/audiofile-0.2.5/api/afNewFileSetup
-  /usr/share/doc/audiofile-0.2.5/api/afOpenFile
-  /usr/share/doc/audiofile-0.2.5/api/afQuery
-  /usr/share/doc/audiofile-0.2.5/api/afReadFrames
-  /usr/share/doc/audiofile-0.2.5/api/afReadMisc
-  /usr/share/doc/audiofile-0.2.5/api/afSeekFrame
-  /usr/share/doc/audiofile-0.2.5/api/afSetErrorHandler
-  /usr/share/doc/audiofile-0.2.5/api/afSetVirtualByteOrder
-  /usr/share/doc/audiofile-0.2.5/api/afWriteFrames
-  /usr/share/doc/audiofile-0.2.5/api/sfconvert
-  /usr/share/doc/audiofile-0.2.5/api/sfinfo
+  /usr/share/doc/audiofile/ACKNOWLEDGEMENTS
+  /usr/share/doc/audiofile/AUTHORS
+  /usr/share/doc/audiofile/ChangeLog
+  /usr/share/doc/audiofile/COPYING
+  /usr/share/doc/audiofile/COPYING.GPL
+  /usr/share/doc/audiofile/NEWS
+  /usr/share/doc/audiofile/NOTES
+  /usr/share/doc/audiofile/README
+  /usr/share/doc/audiofile/TODO
 
-File included in the libaudiofile0 package:
-
+(libaudiofile0)
   /usr/bin/cygaudiofile-0.dll
 
-Files included in the devel package:
-
+(libaudiofile-devel)
   /usr/bin/audiofile-config
   /usr/include/af_vfs.h
   /usr/include/audiofile.h
   /usr/include/aupvlist.h
+  /usr/lib/libaudiofile.a
   /usr/lib/libaudiofile.dll.a
   /usr/lib/libaudiofile.la
   /usr/lib/pkgconfig/audiofile.pc
   /usr/share/aclocal/audiofile.m4
+  /usr/share/doc/audiofile/api/afCloseFile
+  /usr/share/doc/audiofile/api/afGetFrameSize
+  /usr/share/doc/audiofile/api/afGetTrackBytes
+  /usr/share/doc/audiofile/api/afIntro
+  /usr/share/doc/audiofile/api/afNewFileSetup
+  /usr/share/doc/audiofile/api/afOpenFile
+  /usr/share/doc/audiofile/api/afQuery
+  /usr/share/doc/audiofile/api/afReadFrames
+  /usr/share/doc/audiofile/api/afReadMisc
+  /usr/share/doc/audiofile/api/afSeekFrame
+  /usr/share/doc/audiofile/api/afSetErrorHandler
+  /usr/share/doc/audiofile/api/afSetVirtualByteOrder
+  /usr/share/doc/audiofile/api/afWriteFrames
+  /usr/share/doc/audiofile/api/sfconvert
+  /usr/share/doc/audiofile/api/sfinfo
 
 ------------------
 
 Port Notes:
 
------ version 0.2.6-3 -----
-Rebuilt with cygport.
-
------ version 0.2.6-2 -----
-Rebuilt with static libs disabled.  audiofile.m4 is updated for 
-automake-1.8.
-
------ version 0.2.6-1 -----
-Initial release for Cygwin.
+----- version 0.2.6-10 -----
+Initial release for Cygwin 1.7.
 
 
-Cygwin port maintained by: Yaakov Selkowitz 
-http://sourceforge.net/projects/cygwin-ports/ 
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
