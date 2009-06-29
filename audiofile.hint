@@ -1,5 +1,5 @@
 category: Audio Gnome
-requires: cygwin libaudiofile0 libgcc1
+requires: libaudiofile0 libgcc1
 sdesc: "Digital audio file library (utilities)"
 ldesc: "The Audio File Library provides a uniform programming interface 
 to standard digital audio file formats.

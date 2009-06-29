@@ -1,5 +1,5 @@
 category: Audio Gnome
-requires: cygwin libaudiofile0
+requires: libaudiofile0
 external-source: audiofile
 sdesc: "Digital audio file library (development)"
 ldesc: "The Audio File Library provides a uniform programming interface 
