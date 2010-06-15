@@ -11,19 +11,18 @@ MS ADPCM) as well as PCM formats of all flavors (signed and unsigned
 integer, single- and double-precision floating point).
 
 Runtime requirements:
-  cygwin-1.7.0-43
-  libgcc1-4.3.2-2
+  cygwin-1.7.5-1
+  libgcc1-4.3.4-3
 
 Build requirements:
-  autoconf2.5-2.63-10
-  automake1.5-1.5-10
-  binutils-20080624-2
-  cygport-0.9.6-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  libtool-2.2.7a-1
+  autoconf2.5-2.65-1
+  automake1.9-1.9.6-10
+  binutils-2.20.51-2
+  cygport-0.9.84-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-3
+  libtool-2.2.7a-15
   make-3.81-2
-  sed-4.1.5-2
 
 Canonical homepage:
   http://www.68k.org/~michael/audiofile/
@@ -34,67 +33,24 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack audiofile-0.2.6-X-src.tar.bz2
+  unpack audiofile-0.2.7-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./audiofile-0.2.6-X.cygport all
+  cygport ./audiofile-0.2.7-X.cygport all
 
 This will create:
-  /usr/src/audiofile-0.2.6-X.tar.bz2
-  /usr/src/audiofile-0.2.6-X-src.tar.bz2
-  /usr/src/libaudiofile-devel-0.2.6-X.tar.bz2
-  /usr/src/libaudiofile0-0.2.6-X.tar.bz2
+  /usr/src/audiofile-0.2.7-X.tar.bz2
+  /usr/src/audiofile-0.2.7-X-src.tar.bz2
+  /usr/src/libaudiofile-devel-0.2.7-X.tar.bz2
+  /usr/src/libaudiofile0-0.2.7-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary packages:
-
-(audiofile)
-  /usr/bin/sfconvert.exe
-  /usr/bin/sfinfo.exe
-  /usr/share/doc/audiofile/ACKNOWLEDGEMENTS
-  /usr/share/doc/audiofile/AUTHORS
-  /usr/share/doc/audiofile/ChangeLog
-  /usr/share/doc/audiofile/COPYING
-  /usr/share/doc/audiofile/COPYING.GPL
-  /usr/share/doc/audiofile/NEWS
-  /usr/share/doc/audiofile/NOTES
-  /usr/share/doc/audiofile/README
-  /usr/share/doc/audiofile/TODO
-
-(libaudiofile0)
-  /usr/bin/cygaudiofile-0.dll
-
-(libaudiofile-devel)
-  /usr/bin/audiofile-config
-  /usr/include/af_vfs.h
-  /usr/include/audiofile.h
-  /usr/include/aupvlist.h
-  /usr/lib/libaudiofile.a
-  /usr/lib/libaudiofile.dll.a
-  /usr/lib/libaudiofile.la
-  /usr/lib/pkgconfig/audiofile.pc
-  /usr/share/aclocal/audiofile.m4
-  /usr/share/doc/audiofile/api/afCloseFile
-  /usr/share/doc/audiofile/api/afGetFrameSize
-  /usr/share/doc/audiofile/api/afGetTrackBytes
-  /usr/share/doc/audiofile/api/afIntro
-  /usr/share/doc/audiofile/api/afNewFileSetup
-  /usr/share/doc/audiofile/api/afOpenFile
-  /usr/share/doc/audiofile/api/afQuery
-  /usr/share/doc/audiofile/api/afReadFrames
-  /usr/share/doc/audiofile/api/afReadMisc
-  /usr/share/doc/audiofile/api/afSeekFrame
-  /usr/share/doc/audiofile/api/afSetErrorHandler
-  /usr/share/doc/audiofile/api/afSetVirtualByteOrder
-  /usr/share/doc/audiofile/api/afWriteFrames
-  /usr/share/doc/audiofile/api/sfconvert
-  /usr/share/doc/audiofile/api/sfinfo
-
-------------------
-
 Port Notes:
+
+----- version 0.2.7-1 -----
+Version bump.
 
 ----- version 0.2.6-10 -----
 Initial release for Cygwin 1.7.

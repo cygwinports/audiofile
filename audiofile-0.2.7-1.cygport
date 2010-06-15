@@ -1,0 +1,12 @@
+inherit gnome.org
+
+DESCRIPTION="AIFF/WAV audio file library"
+HOMEPAGE="http://www.68k.org/~michael/audiofile/"
+
+PKG_NAMES="${PN} lib${PN}0 lib${PN}-devel"
+audiofile_CONTENTS='--exclude=aclocal usr/bin/*.exe usr/share/'
+libaudiofile0_CONTENTS='usr/bin/*-0.dll'
+libaudiofile_devel_CONTENTS="usr/bin/${PN}-config usr/include/ usr/lib/
+                             usr/share/aclocal/"
+
+DOCS="ACKNOWLEDGEMENTS COPYING.GPL"
