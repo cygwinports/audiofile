@@ -1,5 +1,5 @@
 category: Audio Gnome
-requires: libgcc1
+requires: libgcc1 libstdc++6
 external-source: audiofile
 sdesc: "Digital audio file library (runtime)"
 ldesc: "The Audio File Library provides a uniform programming interface 

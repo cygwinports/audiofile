@@ -1,7 +1,6 @@
-inherit gnome.org
-
 DESCRIPTION="AIFF/WAV audio file library"
-HOMEPAGE="http://www.68k.org/~michael/audiofile/"
+HOMEPAGE="http://audiofile.68k.org/"
+SRC_URI="http://audiofile.68k.org/${P}.tar.gz"
 
 PKG_NAMES="${PN} lib${PN}0 lib${PN}-devel"
 audiofile_CONTENTS='usr/bin/*.exe usr/share/'
