@@ -2,9 +2,11 @@ DESCRIPTION="AIFF/WAV audio file library"
 HOMEPAGE="http://audiofile.68k.org/"
 SRC_URI="http://audiofile.68k.org/${P}.tar.gz"
 
-PKG_NAMES="${PN} lib${PN}0 lib${PN}-devel"
+PKG_NAMES="${PN} lib${PN}1 lib${PN}-devel"
 audiofile_CONTENTS='usr/bin/*.exe usr/share/'
-libaudiofile0_CONTENTS='usr/bin/*-0.dll'
+libaudiofile1_CONTENTS='usr/bin/*-1.dll'
 libaudiofile_devel_CONTENTS="usr/include/ usr/lib/"
 
 DOCS="ACKNOWLEDGEMENTS COPYING.GPL"
+
+KEEP_LA_FILES="none"
