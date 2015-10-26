@@ -1,7 +1,7 @@
 NAME="audiofile"
 VERSION=0.3.6
-RELEASE=1
-CATEGORY="Audio"
+RELEASE=2
+CATEGORY="Libs"
 SUMMARY="Digital audio file library"
 DESCRIPTION="The Audio File Library provides a uniform programming interface to
 standard digital audio file formats. This library allows the processing of
@@ -12,8 +12,10 @@ and MS ADPCM) as well as PCM formats of all flavors (signed and unsigned
 integer, single- and double-precision floating point)."
 HOMEPAGE="http://audiofile.68k.org/"
 SRC_URI="http://audiofile.68k.org/${NAME}-${VERSION}.tar.gz"
+PATCH_URI="http://pkgs.fedoraproject.org/cgit/audiofile.git/plain/audiofile-0.3.6-CVE-2015-7747.patch"
 
 PKG_NAMES="${NAME} lib${NAME}1 lib${NAME}-devel"
+audiofile_CATEGORY="Audio"
 audiofile_SUMMARY="${SUMMARY% *} utilities"
 audiofile_CONTENTS='usr/bin/*.exe usr/share/'
 libaudiofile1_CONTENTS='usr/bin/*-1.dll'
